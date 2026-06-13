@@ -1,4 +1,4 @@
-package com.loan_org.RegistryService;
+package com.loan_org.registry_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

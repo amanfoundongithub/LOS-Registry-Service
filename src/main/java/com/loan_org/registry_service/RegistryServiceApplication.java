@@ -1,4 +1,4 @@
-package com.loan_org.RegistryService;
+package com.loan_org.registry_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
