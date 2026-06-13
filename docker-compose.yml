@@ -1,0 +1,17 @@
+name: loan_origination_system
+version: '3.8'
+
+services:
+  eureka-server:
+    build: .
+    container_name: registry-service
+    ports:
+      - "8761:8761"
+    environment:
+      - SPRING_PROFILES_ACTIVE=local
+    networks:
+      - loan-network
+
+networks:
+  loan-network:
+    driver: bridge
