@@ -1,5 +1,4 @@
-name: loan_origination_system
-version: '3.8'
+name: los_registry_service
 
 services:
   eureka-server:
@@ -8,10 +7,11 @@ services:
     ports:
       - "8761:8761"
     environment:
-      - SPRING_PROFILES_ACTIVE=local
+      - SPRING_PROFILES_ACTIVE=docker
     networks:
       - loan-network
 
 networks:
   loan-network:
-    driver: bridge
+    name: los-network
+    external: true
